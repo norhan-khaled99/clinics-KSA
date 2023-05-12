@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #0098cd, #68bda0);
+  min-height: 100vh;
+}
+
+.striped-circle {
+  /* width: 10%; */
+  /* max-height: 6.8em; */
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    45deg,
+    #81cde6 25%,
+    transparent 25%,
+    transparent 75%,
+    #81cde6 75%,
+    #81cde6
+  );
+  background-size: 9px 1px;
+  transform: rotate(-15deg);
+}
+
+.circle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.7em);
+  grid-template-rows: repeat(9, 0.8em);
+}
+
+.circle-grid div {
+  width: 0.35em;
+  height: 0.35em;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.square {
+  transform: rotate(131deg) translate(-1em, 7em);
+  width: 13em;
+  height: 10em;
+  /* padding-bottom: 50%; */
+  border: 2px dashed white;
+  border-radius: 20%;
+  position: relative;
+  overflow: hidden;
+}
+.square::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  background-color: #64c7c7;
+  border-radius: 20%;
+}
+
+div p {
+  padding: 0;
+  margin: 0;
+}
+div a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+.arabic {
+  direction: rtl;
+}
+
+#title {
+  color: #fcd60b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#subTitle {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#subsubTitle {
+  color: #f4d412;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+}
+
+footer {
+  font-size: 0.45em;
+  color: white;
+}
+
+/* =================Pag2==================== */
+
+#title-Page-2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  width: 5em;
+  height: 5em;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+.half-rectangle {
+  /* width: 13em; */
+  /* height: 5em; */
+  position: relative;
+  border: 2px solid #ffffff;
+  border-left: none;
+  background-color: transparent;
+}
